@@ -6,7 +6,7 @@ import os
 def mkqr_link(user_link, img_name):
     input_data = str(user_link)
 
-    qr = qrcode.QRCode(version=2, box_size=15, border=1)
+    qr = qrcode.QRCode(version=4, box_size=15, border=1)
 
     qr.add_data(input_data)
     qr.make(fit=True)
